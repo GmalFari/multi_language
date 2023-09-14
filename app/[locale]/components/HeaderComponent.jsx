@@ -1,8 +1,12 @@
 import React from 'react'
 import { Facebook,Instagram,Youtube,Search } from 'lucide-react'
 import LanguageChanger from './LanguageCanger'
+import { useTranslations } from 'next-intl'
 const HeaderComponent = () => {
+    const t = useTranslations('header')
+
   return (
+    <>
     <div className='flex w-full justify-around items-center px-4 py-2 bg-gray-200'>
       <div>
         logo
@@ -35,6 +39,25 @@ const HeaderComponent = () => {
       </div>
       
     </div>
+    <hr/>
+    <header className='flex w-full h-16 justify-around items-center px-4 py-2 bg-gray-200'>
+    <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="flex items-center">
+        {/* <Image src="#" alt="University Logo" className="h-8 mr-2" /> */}
+        <h1 className="text-lg font-bold">{t('nav.uni_name')}</h1>
+      </div>
+      <nav>
+        <ul className="flex space-x-4">
+          <li><a href="/">{t('nav.about')}</a></li>
+          <li><a href="/faculties">{t('nav.academic')}</a></li>
+          <li><a href="/academic_affairs">{t('nav.research')}</a></li>
+          <li><a href="/academic_affairs">{t('nav.student')}</a></li>
+          <li><a href="/research_studies">{t('nav.uni_hospital')}</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    </>
   )
 }
 
