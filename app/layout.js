@@ -1,27 +1,13 @@
 import { NextIntlClientProvider } from 'next-intl';
-import "../globals.css"
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'tr' },
-  ];
-}
+import "./globals.css"
 
-export default async function RootLayout({ children, params: { locale } }) {
-  let messages;
-  try {
-    messages = (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {
-    console.log("notfoud")
-  }
+
+export default async function RootLayout({ children }) {
 
   return (
-    <html lang={locale}>
+    <html >
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
-        </NextIntlClientProvider>
       </body>
     </html>
   );

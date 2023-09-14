@@ -17,7 +17,8 @@ export default function LanguageChanger({ locale }) {
     router.push(`/${e.target.value}`);
   };
   return (
-    <select className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:border-indigo-500" onChange={handleChange} value={selectedLang} >
+    <select className="block appearance-none w-full bg-white border
+     border-gray-300 text-gray-700 py-3 text-center px-2 sm:px-4  rounded-md leading-tight focus:outline-none focus:border-indigo-500" onChange={handleChange} value={selectedLang} >
       <option className=" py-2" value="en ">{t('languages.english')}</option>
       <option value="ar">{t('languages.arabic')}</option>
       <option value="tr">{t('languages.turkish')}</option>
