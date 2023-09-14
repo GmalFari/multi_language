@@ -3,9 +3,12 @@ import { Facebook, Instagram, Youtube, Search, AlignJustify, GraduationCap } fro
 import FirstSection from './FirstSection';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import AboutSelectProps from './AboutSelectProps';
 
 const HeaderComponent = () => {
   const t = useTranslations('header');
+  {t('nav.uni_name')} 
+
   const [isHidden, setIsHidden] = useState(true);
   const [isActive, setIsActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -49,9 +52,7 @@ const HeaderComponent = () => {
           <nav className={`hidden md:flex
            flex-1 justify-between items-center list-none bg-gray-200`}>
             <li className={`my-4 ${isActive && 'active'}`}>
-              <Link href="/" onClick={() => handleActiveChange(0)}>
-                {t('nav.about')}
-              </Link>
+              <AboutSelectProps/>
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
               <Link href="/faculties" onClick={() => handleActiveChange(1)}>

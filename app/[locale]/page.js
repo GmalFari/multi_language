@@ -7,7 +7,7 @@ import HeaderComponent from './components/HeaderComponent';
 import Image from 'next/image';
 import HorizonalMulti from './components/HorizonalMulti';
 
-
+import AboutSelectProps from './components/AboutSelectProps';
 export default function Home() {
   const t = useTranslations();
    return (
@@ -15,6 +15,7 @@ export default function Home() {
       {/* <div className='flex-1'> */}
       <HeaderComponent/>
       {/*start latest news */}
+      <AboutSelectProps/>
       <HorizonalMulti namespace={"news"}/>
       {/*end latest news */}
       {/* start Upcomming events */}

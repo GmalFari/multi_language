@@ -3,7 +3,7 @@ import { Facebook,Instagram,Youtube,Search,AlignJustify } from 'lucide-react'
 import LanguageChanger from './LanguageCanger'
 const FirstSection = () => {
   return (
-    <div className='global_bg flex w-full text-white  justify-around items-center px-4 '>
+    <div className='global_bg max-w[full] flex w-full text-white  justify-around items-center px-4 '>
       <div className='font-bold transform hover:scale-110'>
         University
       </div>

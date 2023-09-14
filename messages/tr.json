@@ -1,1 +1,51 @@
-{"news":{"news":{"title":"Emirates Ulusal Okulları 16. sınıf öğrencilerinin mezuniyet töreni","header":"son Haberler","description":"Emirates Ulusal Okulları 16. sınıf öğrencilerinin mezuniyet töreni. Majesteleri Şeyh Mansur'un himayesinde düzenlenen ..."}},"events":{"events":{"title":"BAE Üniversitesi İnovasyon Haftasına katılıyor","header":"Yaklaşan Etkinlikler"}},"header":{"nav":{"about":"Üniversite hakkında","student":"Öğrenci hayatı","academic":"Akademik ilişkiler","research":"Araştırma ve Lisansüstü","uni_name":"Üniversite adı","faculties":"Fakülteler ve Enstitüler","uni_hospital":"üniversite Hastanesi"},"search":"Aramak","languages":{"arabic":"Arapça","english":"İngilizce","turkish":"Türkçe"},"selectedLang":"dil"}}
+{
+  "news": {
+  "news": {
+      "title": "Emirates Ulusal Okulları 16. sınıf öğrencilerinin mezuniyet töreni",
+      "header": "son Haberler",
+      "description": "Emirates Ulusal Okulları 16. sınıf öğrencilerinin mezuniyet töreni. Majesteleri Şeyh Mansur'un himayesinde düzenlenen ..."
+    }
+  },
+  "about": {
+    "about": {
+      "aboutuni":"Üniversite hakkında",
+    "events": "Etkinlik Programı",
+      "jobs": "İş fırsatları",
+      "news": "Haber Odası",
+      "plan": "Stratejik plan",
+      "about": "Üniversite Hakkında",
+      "admin": "Üniversite Yönetimi",
+      "logo ": "Üniversite Logosu",
+      "vision": "Vizyon ve misyon",
+      "offices": "Ofisler ve Departmanlar",
+      "welcome": "Başkanın Hoş Geldiniz Mesajı",
+      "policies": "Üniversite Politikaları",
+      "structure": "Örgütsel yapı",
+      "accreditation ": "Akreditasyon"
+    }
+  },
+  "events": {
+    "events": {
+      "title": "BAE Üniversitesi İnovasyon Haftasına katılıyor",
+      "header": "Yaklaşan Etkinlikler"
+    }
+  },
+  "header": {
+    "nav": {
+      "about": "Üniversite hakkında",
+      "student": "Öğrenci hayatı",
+      "academic": "Akademik ilişkiler",
+      "research": "Araştırma ve Lisansüstü",
+      "uni_name": "Üniversite adı",
+      "faculties": "Fakülteler ve Enstitüler",
+      "uni_hospital": "üniversite Hastanesi"
+    },
+    "search": "Aramak",
+    "languages": {
+      "arabic": "Arapça",
+      "english": "İngilizce",
+      "turkish": "Türkçe"
+    },
+    "selectedLang": "dil"
+  }
+}
