@@ -46,7 +46,8 @@ const HeaderComponent = () => {
             </h1>
                 </Link>
           </div>
-          <nav className={`hidden md:flex flex-1 justify-between items-center list-none bg-gray-200`}>
+          <nav className={`hidden md:flex
+           flex-1 justify-between items-center list-none bg-gray-200`}>
             <li className={`my-4 ${isActive && 'active'}`}>
               <Link href="/" onClick={() => handleActiveChange(0)}>
                 {t('nav.about')}
@@ -78,7 +79,8 @@ const HeaderComponent = () => {
               <AlignJustify />
             </button>
             <nav
-              className={`absolute list-none right-0 mt-8 py-2 w-48 bg-gray-200 rounded-md md:hidden shadow-lg z-1000 ${
+              className={`absolute z-20 list-none right-0 mt-8 py-2 w-48
+               bg-gray-200 rounded-md md:hidden shadow-lg  ${
                 isHidden ? 'hidden' : 'block'
               }`}
               ref={containerRef}

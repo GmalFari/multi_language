@@ -5,18 +5,22 @@ import { useTranslations } from 'next-intl';
 import LanguageChanger from './components/LanguageCanger';
 import HeaderComponent from './components/HeaderComponent';
 import Image from 'next/image';
-export default function Home() {
-  const t = useTranslations('header');
+import HorizonalMulti from './components/HorizonalMulti';
 
-  const userName = 'Jamal Farea';
-  return (
-    <div className={"bg-gray-100 text-center w-[100vw]  sm:px-10  flex flex-col items-center  text-black h-[100vh] "}>
+
+export default function Home() {
+  const t = useTranslations();
+   return (
+    <div className={"relative z-10000 bg-gray-100 text-center  w-[100vw]  sm:px-10  flex flex-col items-center  text-black  "}>
       {/* <div className='flex-1'> */}
       <HeaderComponent/>
-      
+      {/*start latest news */}
+      <HorizonalMulti namespace={"news"}/>
+      {/*end latest news */}
+      {/* start Upcomming events */}
+      <HorizonalMulti namespace={"events"} />
+      {/* end Upcomming events */}
 
-      <h1>{t('selectedLang')}</h1>
-      <LanguageChanger/>
       {/* </div> */}
     </div>
   );

@@ -16,6 +16,7 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,3 +30,15 @@ body {
 .active {
   border-bottom: 2px solid black;
 }
+
+
+
+.style_btn{
+
+  
+  background: linear-gradient(
+      to right,
+      transparent,
+      #008cce,
+      #0f3d53
+    ),#0f3d53}
