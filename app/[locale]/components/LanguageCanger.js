@@ -17,7 +17,7 @@ export default function LanguageChanger({ locale }) {
     router.push(`/${e.target.value}`);
   };
   return (
-    <select className="block appearance-none  w-full bg-slate-700  border
+    <select className="global_bg block appearance-none  w-full   border
      border-gray-300 text-white py-3 text-center px-2 sm:px-4 
       rounded-md leading-tight focus:outline-none focus:border-indigo-500" onChange={handleChange}
        value={selectedLang} >

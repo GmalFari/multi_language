@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+   --main-font-family: 'Cairo', sans-serif;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -32,8 +33,14 @@ body {
 }
 
 
-
-.style_btn{
+.uni_style{
+  color: linear-gradient(
+      to right,
+      transparent,
+      #008cce,
+      #0f3d53
+    ),#0f3d53}
+.style_btn,.global_bg{
 
   
   background: linear-gradient(
@@ -41,4 +48,7 @@ body {
       transparent,
       #008cce,
       #0f3d53
-    ),#0f3d53}
+    ),#0f3d53
+  }
+
+

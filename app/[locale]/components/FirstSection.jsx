@@ -3,18 +3,18 @@ import { Facebook,Instagram,Youtube,Search,AlignJustify } from 'lucide-react'
 import LanguageChanger from './LanguageCanger'
 const FirstSection = () => {
   return (
-    <div className='flex w-full text-white bg-slate-800  justify-around items-center px-4 '>
+    <div className='global_bg flex w-full text-white  justify-around items-center px-4 '>
       <div className='font-bold transform hover:scale-110'>
         University
       </div>
       <div className='flex md:flex-1  justify-center items-center'>
-      <button className='border-1 p-2 bg-slate-700 hover:scale-110 rounded-lg mx-2 border-gray-600'>
-        <Facebook className=' text-blue-500 '/></button>
-        <button className='border-1 p-2 bg-slate-700 hover:scale-110 rounded-lg mx-2 border-gray-600'>
-        <Instagram className='text- text-red-500'/></button>
-       <button className='border-1 p-2 bg-slate-700 hover:scale-110 rounded-lg mx-2 border-gray-600'>
+      <button className='border-1 p-2 global_bg hover:scale-110 rounded-lg mx-2 border-gray-600'>
+        <Facebook className=' text-white '/></button>
+        <button className='border-1 p-2 global_bg hover:scale-110 rounded-lg mx-2 border-gray-600'>
+        <Instagram className='text- text-white '/></button>
+       <button className='border-1 p-2 global_bg hover:scale-110 rounded-lg mx-2 border-gray-600'>
 
-        <Youtube className=' text-red-600'/></button>
+        <Youtube className=' text-white '/></button>
       </div>
       <div className='flex justify-between'>
       <div className="relative hidden md:block mx-4 focus-visible:border-none">

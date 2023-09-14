@@ -38,9 +38,9 @@ const HeaderComponent = () => {
       <hr />
       <header className="flex w-full h-24 justify-around items-center px-4 py-2 bg-gray-200">
         <div className="container mx-auto flex items-center justify-between px-4">
-          <div className="flex items-center">
-              <Link className='t text-[#008cce]' href="/">
-            <h1 className="flex text-lg font-bold me-10">
+          <div className="flex uni_style items-center">
+              <Link className='uni_style' href="/">
+            <h1 className="flex uni_style  text-lg font-bold me-10">
               <GraduationCap className='me-2 '/>
                 {t('nav.uni_name')} 
             </h1>
