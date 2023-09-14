@@ -65,7 +65,7 @@ const HeaderComponent = () => {
       </nav>
         <div className='md:hidden'>
         <button className='md:hidden' onClick={handleDropDwon}><AlignJustify/></button>
-      <nav className={`absolute  list-none right-12 mt-8
+      <nav className={`absolute  list-none right-0 mt-8
        py-2 w-48 bg-gray-200 rounded-md  md:hidden shadow-lg z-1000 
             ${isHidden  ?'block':'hidden'}
         `}>
