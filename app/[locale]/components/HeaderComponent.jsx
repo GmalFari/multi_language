@@ -52,7 +52,7 @@ const HeaderComponent = () => {
           <nav className={`hidden md:flex
            flex-1 justify-between items-center list-none bg-gray-200`}>
             <li className={`my-4 ${isActive && 'active'}`}>
-              <AboutSelectProps namespace={"about"} arrayProp={about_props}/>
+              <AboutSelectProps label={t('nav.about')} namespace={"about"} arrayProp={about_props}/>
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
               <Link href="/faculties" onClick={() => handleActiveChange(1)}>

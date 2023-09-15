@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-const AboutSelectProps = ({namespace,arrayProp}) => {
+const AboutSelectProps = ({label,namespace,arrayProp}) => {
   const t = useTranslations(`${namespace}`);
   const header = useTranslations('header')
 
@@ -45,7 +45,7 @@ const AboutSelectProps = ({namespace,arrayProp}) => {
         onMouseEnter={() => handleDropdown(true)}
         // onMouseLeave={() => handleDropdown(false)}
         >
-          {t(`${namespace}.aboutuni`)}
+          {label}
         </button>
         <nav
           className={`absolute z-20 list-none right-0 mt-2 py-2 w-48 bg-gray-200 rounded-md shadow-lg ${
