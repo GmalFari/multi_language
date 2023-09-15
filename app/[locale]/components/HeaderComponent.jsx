@@ -4,7 +4,7 @@ import FirstSection from './FirstSection';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import AboutSelectProps from './AboutSelectProps';
-
+import { about_props } from '@/lib/main_prop';
 const HeaderComponent = () => {
   const t = useTranslations('header');
   {t('nav.uni_name')} 
@@ -52,7 +52,7 @@ const HeaderComponent = () => {
           <nav className={`hidden md:flex
            flex-1 justify-between items-center list-none bg-gray-200`}>
             <li className={`my-4 ${isActive && 'active'}`}>
-              <AboutSelectProps/>
+              <AboutSelectProps namespace={"about"} arrayProp={about_props}/>
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
               <Link href="/faculties" onClick={() => handleActiveChange(1)}>

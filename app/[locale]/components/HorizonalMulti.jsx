@@ -5,7 +5,7 @@ const HorizonalMulti = ({namespace}) => {
   const t = useTranslations(`${namespace}`)
   const latestNewsProps = [t(`${namespace}.title`)]
   return (
-    <div className='  overflow-x-scroll mb-16'>
+    <div className='max-w-full  overflow-x-scroll mb-16'>
       <h1 className='font-bold  text-2xl my-4 '>{t(`${namespace}.header`)}</h1>
       <div className="w-full flex overflow-x-scroll overflow-y-hidden max-h-full ">
       {Array(3).fill().map((_, index) => (

@@ -3,26 +3,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-const AboutSelectProps = () => {
-  const t = useTranslations('about');
+const AboutSelectProps = ({namespace,arrayProp}) => {
+  const t = useTranslations(`${namespace}`);
   const header = useTranslations('header')
 
 
-  const about_props = [
-    "aboutuni",
-    'welcome',
-    'policies',
-    'vision',
-    'logo',
-    'plan',
-    'structure',
-    'admin',
-    'offices',
-    'accreditation',
-    'events',
-    'news',
-    'jobs'
-]
+ 
   const [isHidden, setIsHidden] = useState(true);
   const [activeIndex, setActiveIndex] = useState(null);
   const containerRef = useRef(null);
@@ -57,8 +43,9 @@ const AboutSelectProps = () => {
       <div className="relative inline-block">
         <button className="md"
         onMouseEnter={() => handleDropdown(true)}
-        onMouseLeave={() => handleDropdown(false)}>
-          {t()} 
+        // onMouseLeave={() => handleDropdown(false)}
+        >
+          {t(`${namespace}.aboutuni`)}
         </button>
         <nav
           className={`absolute z-20 list-none right-0 mt-2 py-2 w-48 bg-gray-200 rounded-md shadow-lg ${
@@ -66,10 +53,10 @@ const AboutSelectProps = () => {
           }`}
           ref={containerRef}
         >
-          {about_props.map((prop,index)=>(
+          {arrayProp.map((myselect,index)=>(
             <li key={index}  className={`my-4 border-2 border-b-gray-300 ${activeIndex === 0 ? 'active' : ''}`}>
             <Link href="/" onClick={() => handleActiveChange(0)}>
-              {t(`about.${prop}`)}
+              {t(`${namespace}.${myselect}`)}
             </Link>
           </li>
           ))}
