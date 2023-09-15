@@ -60,6 +60,10 @@ const HeaderComponent = () => {
               </Link>
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
+            <AboutSelectProps label={t('nav.collages')} namespace={"about"} arrayProp={about_props}/>
+
+            </li>
+            <li className={`my-4 ${isActive && 'active'}`}>
               <Link href="/academic_affairs" onClick={() => handleActiveChange(2)}>
                 {t('nav.research')}
               </Link>
