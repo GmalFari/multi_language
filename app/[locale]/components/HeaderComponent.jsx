@@ -4,7 +4,7 @@ import FirstSection from './FirstSection';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import AboutSelectProps from './AboutSelectProps';
-import { about_props } from '@/lib/main_prop';
+import { about_props,collages } from '@/lib/main_prop';
 const HeaderComponent = () => {
   const t = useTranslations('header');
   {t('nav.uni_name')} 
@@ -60,7 +60,7 @@ const HeaderComponent = () => {
               </Link>
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
-            <AboutSelectProps label={t('nav.collages')} namespace={"about"} arrayProp={about_props}/>
+            <AboutSelectProps label={t('nav.collages')} namespace={"collages"} arrayProp={collages}/>
 
             </li>
             <li className={`my-4 ${isActive && 'active'}`}>
