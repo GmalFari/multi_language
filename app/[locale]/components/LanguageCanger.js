@@ -18,7 +18,7 @@ export default function LanguageChanger({ locale }) {
   };
   return (
     <select className="global_bg block appearance-none  w-full   border
-     border-gray-300 text-white py-3 text-center px-2 sm:px-4 
+     border-gray-300 text-white text-center px-2 sm:px-4 
       rounded-md leading-tight focus:outline-none focus:border-indigo-500" onChange={handleChange}
        value={selectedLang} >
       <option className=" py-2" value="en">{t('languages.english')}</option>
